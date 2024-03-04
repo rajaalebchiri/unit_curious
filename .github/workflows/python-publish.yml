@@ -36,7 +36,7 @@ jobs:
         run: python setup.py sdist
 
       - name: Publish to Test PyPI
-        if: github.event.inputs.repository == 'testpypi'
+        if: github.event.inputs.pypi_repo == 'testpypi'
         run: |
           twine upload --repository-url https://test.pypi.org/legacy/ dist/* --skip-existing
         env:
@@ -44,7 +44,7 @@ jobs:
           TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
 
       - name: Publish to PyPI
-        if: github.event.inputs.repository == 'pypi'
+        if: github.event.inputs.pypi_repo == 'pypi'
         run: |
           twine upload dist/* --skip-existing
         env:
