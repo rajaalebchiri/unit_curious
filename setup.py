@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="unit_curious",
-    version="0.0.2",
+    version="0.0.3",
     description="Explore historical, quirky, and unconventional units of measurement with this easy-to-use Python library.",
     long_description=long_description,
     long_description_content_type="text/markdown",
