@@ -2,6 +2,7 @@
 import pytest
 from unit_curious.unit_curious import cubit
 
+
 def test_cubit_foot():
     """Testing the cubit function for to = 'foot'"""
     dictionary = {
@@ -10,6 +11,7 @@ def test_cubit_foot():
     }
     for key, value in dictionary.items():
         assert key == value
+
 
 def test_cubit_meter():
     """Testing the cubit function for to = 'meter'"""
@@ -36,6 +38,7 @@ def test_cubit_conversion():
 
 
 def test_invalid_unit():
-    with pytest.raises(ValueError, match="Invalid unit. Available options: foot, meter, or inches"):
+    with pytest.raises(
+        ValueError, match="Invalid unit. Available options: foot, meter, or inches" # noqa
+    ):
         cubit(2, to="invalid_unit")
-

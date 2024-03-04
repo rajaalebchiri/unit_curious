@@ -2,6 +2,7 @@
 import pytest
 from unit_curious.unit_curious import smoot
 
+
 def test_default_conversion():
     result = smoot(1)  # Test with smoot value of 1
     assert result == 5.58333

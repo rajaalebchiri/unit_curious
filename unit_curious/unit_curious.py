@@ -37,8 +37,7 @@ def cubit(n, to: str = "foot"):
     elif to == "inches":
         return float(n * 1.7716535433071e1)
     elif to not in ["foot", "meter", "inches"]:
-        raise ValueError(
-            "Invalid unit. Available options: foot, meter, or inches")
+        raise ValueError("Invalid unit. Available options: foot, meter, or inches") # noqa
 
 
 def barleycorn(n, to: str = "foot"):
@@ -69,7 +68,7 @@ def barleycorn(n, to: str = "foot"):
     ------
     ValueError
         If the provided 'to' parameter is not one of the supported units.
-    """
+    """ # noqa
 
     if to == "foot":
         return n * 0.0277778
@@ -78,8 +77,7 @@ def barleycorn(n, to: str = "foot"):
     elif to == "inches":
         return n * 0.33333359999999984113
     elif to not in ["foot", "meter", "inches"]:
-        raise ValueError(
-            "Invalid unit. Available options: foot, meter, or inches")
+        raise ValueError("Invalid unit. Available options: foot, meter, or inches") # noqa
 
 
 def smoot(n, to: str = "foot"):
@@ -105,7 +103,7 @@ def smoot(n, to: str = "foot"):
     --------
     >>> smoot(1, to="inches")
     67.0
-    """
+    """ # noqa
 
     if to == "foot":
         return n * 5.58333
@@ -114,8 +112,7 @@ def smoot(n, to: str = "foot"):
     elif to == "inches":
         return float(n * 67)
     elif to not in ["foot", "meter", "inches"]:
-        raise ValueError(
-            "Invalid unit. Available options: foot, meter, or inches")
+        raise ValueError("Invalid unit. Available options: foot, meter, or inches") # noqa
 
 
 def stone(n, to: str = "Kilogram"):
@@ -142,7 +139,7 @@ def stone(n, to: str = "Kilogram"):
     >>> stone(15, to="Ounces")
     3360
 
-    """
+    """ # noqa
 
     if to == "Kilogram":
         return n * 6.35029
