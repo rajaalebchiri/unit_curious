@@ -1,7 +1,12 @@
-name: Publish to TestPyPI
+name: Publish Package
 
 on:
   workflow_dispatch:
+    input:
+      pypi_repo:
+        description: "Repo to upload to pypi"
+        default: "testpypi"
+        required: true
 
 jobs:
   python-build-n-publish:
