@@ -2,7 +2,7 @@ name: Publish Package
 
 on:
   workflow_dispatch:
-    input:
+    inputs:
       pypi_repo:
         description: "Repo to upload to pypi"
         default: "testpypi"
