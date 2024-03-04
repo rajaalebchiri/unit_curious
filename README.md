@@ -38,6 +38,10 @@ Smoot (humorous MIT unit)
 
 Stone (British weight)
 
+## Coming Soon to UnitCurious
+
+We're always exploring new horizons at UnitCurious, and we've got some exciting features and functions in the pipeline designed to make your experience even more fascinating and fun.
+
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. 
